@@ -1,0 +1,19 @@
+//
+//  HuanXinDemo_header.pch
+//  HuanXinDemo
+//
+//  Created by Apple on 2018/4/26.
+//  Copyright © 2018年 Apple. All rights reserved.
+//
+
+#ifndef HuanXinDemo_header_pch
+#define HuanXinDemo_header_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #define NSEaseLocalizedString(key, comment) [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"EaseUIResource" withExtension:@"bundle"]] localizedStringForKey:(key) value:@"" table:nil]
+
+#endif
+
+#endif /* HuanXinDemo_header_pch */

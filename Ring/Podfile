@@ -1,0 +1,30 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'HuanXinDemo' do
+
+    # Lite版本
+    pod 'HyphenateLite', '~> 3.4.0'
+    # Full版本
+    pod 'Hyphenate', '~> 3.4.0'
+    # 简单UI
+    #pod 'EaseUI', :git => 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git'
+    
+    pod 'CryptoSwift', '~> 0.8.3'
+
+
+    # 单元测试
+    target 'HuanXinDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+    end
+
+    target 'HuanXinDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+    end
+
+end
